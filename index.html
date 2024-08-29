@@ -7,25 +7,57 @@
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
-    <!-- Nav bar -->
+    <!-- Header -->
     <header>
+      <!-- Navbar -->
       <nav id="navbar">
         <div class="logo">Eilleen</div>
-        <div>
-          <ul class="nav-links">
-            <li><a href="#about">About</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div id="hamburger-menu">
+          <i class="fa-solid fa-bars" onclick="toggleMenu()"></i>
         </div>
       </nav>
     </header>
 
-    <main></main>
+    <!-- Main -->
+    <main>
+      <!-- Profile Section -->
+      <section id="profile">
+        <div class="profile-pic-container">
+          <img src="./images/monyet.png" alt="Eilleen's Profile Picture" />
+        </div>
 
+        <div class="profile-text">
+          <p class="profile-text-1">Hi, I'm</p>
+          <h1 class="profile-title">Eilleen</h1>
+          <p class="profile-text-2">Student</p>
+          <div class="btn-container">
+            <img
+              class="icon"
+              src="./images/github.png "
+              alt="Link Github"
+              onclick="location.href='https://github.com/eilleendwe'"
+            />
+            <button class="btn">Contact Info</button>
+          </div>
+        </div>
+      </section>
+
+      <section id="about"></section>
+    </main>
+
+    <!-- Footer -->
     <footer></footer>
 
+    <script
+      src="https://kit.fontawesome.com/f8e1a90484.js"
+      crossorigin="anonymous"
+    ></script>
     <script src="./index.js"></script>
   </body>
 </html>
