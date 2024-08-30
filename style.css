@@ -60,7 +60,7 @@ nav {
 }
 
 section {
-    padding: top 4vh; ;
+    padding-top:4vh; ;
     height: 96vh;
     margin: 0 10rem;
 
@@ -69,42 +69,45 @@ section {
 /* Section Profile */
 #profile {
     display: flex;
+    flex-direction: row;
     justify-content: center;
-    gap: 5rem;
+    gap: 10rem;
 }
 
-.profile-pic-container {
+.section-pic-container {
     display: flex;
     height: 400px;
     margin: auto 0;
     
 }
 
-.profile-pic-container img{
+.section-pic-container img{
 border-radius: 200px;
 }
 
-.profile-text {
+.section-text {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-self: center;
     text-align: center;
+    gap: 0.5rem;
 }
 
-.profile-text p {
+.section-text p {
     /* font-weight: 600; */
 }
 
-.profile-text-1 {
-    font-size: 1.25rem;
+.section-text-1 {
+    font-size: 1.5rem;
 }
 
-.profile-title {
+.title {
     font-size: 3rem;
     margin: 10px 0 10px;
 }
 
-.profile-text-2 {
+.section-text-2 {
     font-size: 1.8rem;
 }
 
@@ -140,6 +143,79 @@ border-radius: 200px;
     color: black;
 }
 
+
+/* About Section */
+#about {
+    text-align: center;
+    /* position: relative; */
+}
+
+.about-detail-container,
+.about-container,
+.detail-container,
+.text-container {
+    display: flex;
+}
+
+.about-detail-container{
+    justify-content: center;
+    flex-direction: column;
+}
+
+.about-container {
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    gap: 2rem;
+    margin: 2rem 0 3rem;
+}
+
+.detail-container {
+    flex-direction: column;
+    flex: 1;
+    padding: 2rem;
+    border: black 1px solid;
+    border-radius: 2rem;
+    gap: 5px;
+    font-size: 1.5rem;
+}
+
+.text-container p{
+    font-size: 1.5rem;
+}
+
+/* Experience section */
+#experience {
+    text-align: center;
+    position: relative;
+}
+/* 
+.experience-detail-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    
+} */
+
+.article-container {
+    display: flex;
+    text-align: initial;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 2.5rem;
+    justify-content: space-around;
+    margin: 1rem 0 1rem;
+
+}
+
+.article {
+    display: flex;
+    width: 10rem;
+    justify-content: space-around;
+    gap: 0.5rem;
+}
+
+
 @media (max-width: 900px) {
     .nav-links {
         position: absolute;
@@ -169,4 +245,3 @@ border-radius: 200px;
         display: block;
     }
 }
-
