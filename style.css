@@ -9,10 +9,13 @@ html {
 
 body {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
 }
 
 .logo {
     font-size: 2rem;
+    font-weight: 600;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .logo:hover {
@@ -28,12 +31,12 @@ nav {
     align-items: center;
     position: relative;
     height: 10vh;
-    padding: 0 5%;
+    padding: 3rem 5%;
 }
 
 .nav-links {
     list-style: none;
-    font-size: 1.5rem;
+    font-size: 2rem;
     gap: 2rem;
 }
 
@@ -59,7 +62,7 @@ nav {
 }
 
 section {
-    padding: 5vh 5%;
+    padding: 10vh 5%;
 }
 
 /* Section Profile */
@@ -82,7 +85,8 @@ section {
 }
 
 .section-text {
-    display: flex;
+    padding-top: 2.3rem;
+    display: block;
     flex-direction: column;
     justify-content: center;
     text-align: center;
@@ -156,6 +160,10 @@ section {
     border-radius: 2rem;
     gap: 5px;
     font-size: 1.5rem;
+}
+
+.text-container {
+    margin: 0 5rem;
 }
 
 .text-container p {
@@ -258,10 +266,12 @@ footer p {
     text-underline-offset: 10px;
 }
 
-/* Responsive Styles */
+/* Media */
 @media (max-width: 900px) {
     .nav-links {
         position: absolute;
+        justify-content: center;
+        text-align: center;
         top: 100%;
         left: 0;
         right: 0;
@@ -308,5 +318,9 @@ footer p {
         flex-direction: column;
         justify-content: center;
         text-align: center;
+    }
+
+    .text-container {
+        margin: 0 0;
     }
 }
