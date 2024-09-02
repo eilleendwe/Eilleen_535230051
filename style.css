@@ -185,6 +185,29 @@ section {
     gap: 0.5rem;
 }
 
+.work-experience p {
+    text-align: justify;
+}
+
+.work-article-container {
+    display: flex;
+    text-align: initial;
+    flex-wrap: wrap;
+    gap: 2.5rem;
+    justify-content: space-between;
+    margin: 1rem 0;
+}
+
+.work-details {
+    display: flex;
+    justify-content: space-between;
+}
+
+.work-details p {
+    font-size: 1.25rem;
+    color: grey;
+}
+
 .project-img {
     width: 100%;
     border-radius: 5px;
@@ -265,6 +288,68 @@ footer p {
     text-decoration: underline;
     text-underline-offset: 10px;
 }
+
+.skills-container {
+    width: 500px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+}
+
+.skill {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.skill-icon {
+    width: 4rem;
+    height: 4rem;
+    margin-right: 15px;
+}
+
+.skill-bar {
+    flex-grow: 1;
+    height: 10px;
+    background-color: #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+    position: relative;
+}
+
+.skill-level {
+    height: 100%;
+    border-radius: 5px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: black;
+}
+
+.html {
+    width: 80%;
+}
+
+.css {
+    width: 60%;
+}
+
+.javascript {
+    width: 50%;
+}
+
+.python {
+    width: 55%;
+}
+
+.cpp {
+    width: 60%;
+}
+
+.php {
+    width: 30%;
+}
+
 
 /* Media */
 @media (max-width: 900px) {
